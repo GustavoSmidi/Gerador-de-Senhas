@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gerador de Senhas</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <div class="conteiner">
+
+        <label for="texto">Senha</label>
+        <input type="text" id="texto" name="texto"><br>
+        <br>
+        <label for="checkbox">Incluir Letras</label>
+        <input type="checkbox" id="IncluirLetras" name="IncluirLetras"><br>
+
+        <label for="checkbox">Incluir números:</label>
+        <input type="checkbox" id="incluirNumeros" name="incluirNumeros"><br>
+
+        <label for="checkbox">Incluir caracteres especiais</label>
+        <input type="checkbox" id="IncluirCS" name="IncluirCS"><br> <br>
+
+        <label for="caracteres">Quantidade de Caracteres <span id="CaractereValor">50</span></label>
+        <input type="range" id="caracteres" name="caracteres" min="1" max="100" value="50" onchange="AtualizarValor(this.value)"><br>
+        <br><br>
+
+        <input type="button" id="Gerar" name="Gerar" value="Gerar" onclick="GerarSenha()">
+
+    </div>
+    </body>
+</html>
